@@ -51,6 +51,10 @@ class AddWordViewModel(application: Application) : AndroidViewModel(application)
         }
     }
 
+    fun updateNewWord(input: String) {
+        newWord = input
+    }
+
     fun clearMessage() {
         _message.value = ""
     }
